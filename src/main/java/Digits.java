@@ -23,7 +23,7 @@ public class Digits
 	return false;
 	}
 	return true;
-	}
+	} 
 	
 	public String toString()
 	{

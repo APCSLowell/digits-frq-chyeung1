@@ -20,9 +20,9 @@ public class Digits
 	{ /* to be implemented in part (b) */
 	 int comp = 0;
 	for(int i = 0; i < digitList.size(); i++){
-	if(comp < digitList.get(i))
-	comp = digitList.get(i);
-	else if (comp >= digitList.get(i))
+	if(comp < digitList.get(i).intValue())
+	comp = digitList.get(i).intValue();
+	else if (comp >= digitList.get(i).intValue())
 	return false;
 	}
 	return true;

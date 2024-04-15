@@ -7,11 +7,13 @@ public class Digits
 
 	public Digits(int num)
 	{ /* to be implemented in part (a) */ 
-	   String bruh = new String();
-	   bruh = num.toString();
-	   for(int i = 0; i < bruh.length(); i++){
-		digitList.add(bruh.subString(i, i+1));
-	   }
+	digitList = new ArrayList<Integer)();
+	 if(num == 0)
+	 digitList.add(new Intger(0));
+	 while(num > 0){
+		digitList.add(0, new Integer(num % 10));
+		num /= 10;
+	 }
 	}
 
 	public boolean isStrictlyIncreasing()

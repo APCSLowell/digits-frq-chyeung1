@@ -7,9 +7,10 @@ public class Digits
 
 	public Digits(int num)
 	{ /* to be implemented in part (a) */ 
-	   String bruh = num.toString();
-	   for(int i = 0; i < bruh.length; i++){
-		digitList.add(bruh.chartAt(i));
+	   String bruh = new String();
+	   bruh = num.toString();
+	   for(int i = 0; i < bruh.length(); i++){
+		digitList.add(bruh.subString(i, i+1));
 	   }
 	}
 
